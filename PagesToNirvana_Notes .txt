@@ -1,0 +1,175 @@
+=>Pages To Nirvana 
+
+------------------------------------------------------------
+FrontEnd
+------------------------------------------------------------
+1.Getting Started
+->Tailwind Css using vite install directly through steps 
+  same as react using vite and tailwind   
+-> es7 + react extension install and rfce to get function
+
+2.DaisyUi [To create NavBar] - FrameWork 
+-> TailWind Css component library   
+->Go to DaisyUI and components and install  
+->Choose NavBar Component the way you want 
+
+->Remove App.css
+
+3.Create Components Folder and Navbar.jsx file 
+->rfce
+->Import it in app.jsx
+->Change Tailwind accordingly
+->You can use the cursor option in inspect to check the space available 
+->If any code is repeating we can create a reusable component
+
+4.Adding Search Component
+-> Daisy Ui - Text Input 
+->This utility class overrides the hidden class but only 
+  for medium (md) screens and larger (typically 768px and 
+  above). It sets display: block, making the element 
+  visible again on these larger screens.
+
+5.Daisy Ui - Theme Controller [Night mode]
+
+6.Google Fonts for NavBar Fonts[Add to bag,get embeddedCode]
+->Poppins = Change Styles = Medium 10 =import and @import
+->Fredoka
+
+7.Banner From DaisyUI or Manual 
+->Banner Component 
+->mt-12 md:mt-32 .... for medium and more devices margin 32 
+  else 12 which are smaller than that 
+
+8.Image 
+->Freepik
+->Import image into banner
+->Provide order of col by order-1 to a part
+
+9.Footer Component
+->Copy from daisy UI 
+
+10.Fixed NavBar component 
+->While Scrolling NavBar shadow is visible along with its color change 
+->Use Hooks and States 
+->Use `` and  $ to include JS
+
+11.Creating Data for display
+->Create a JSON array for displaying whatever data you want 
+->Later this data is stored in Backend
+->Filter method works with Array and helps in filtering of 
+  data
+
+12.Slider
+-> Slider.. React-Slick-Slider Library import slider from it
+->Read docs install html,css and copy imports in same folder 
+->Select the slider you want->Responsive ->Copy the import 
+  Slider ->Add Func settings before return -> Add <Slider> 
+  in jsx
+->Learn slider breakpoint and pixels dor devices 
+
+13.Card
+-> As we will be using card component many times we create
+   it as a component 
+->Import From DaisyUI
+->Add into Card component
+->MAP into Slider 
+->To avoid cards from sliding over navbar place "z-0"
+
+14.Course Component on Navbar
+->Sometimes when you move components in folder it won't work
+  so try to call jsx component again so that it can route 
+  the path automatically again
+
+15.Routing 
+->To define routing in react we can use react-router-Dom
+->install react-router-dom
+->import {} from "react-router-dom" in App.jsx 
+-><StrictMode> .....Renders Component 2 times so we use 
+  <Browser Router> as rendering Routes 2 times may cause 
+  issues and errors so make changes in "main.jsx"
+->Add href="" in Navbar for Routing and Add route
+
+16.Create a New Folder in src called Courses
+->Create a Component "Course"
+->Add it in "Courses" page and add navbar and footer to it 
+->Route this as a entire page into App.jsx
+
+17.Dark Mode
+->Use hook
+->Check if local storage in inspect application has a theme 
+  if yes return it or else turn it to light 
+
+18.Use Modal 
+->OnClick a pop up shows up like login up
+->Modal has an unique id and we need to import it in login 
+  button in navbar
+->showModal() opens that modal
+->Whenever there is a error link is not defined check if 
+  Link from react-router-dom is imported or not
+
+19.React-Hook-Form 
+->To validate our login page if entry is right or not 
+->Go to website
+->Check my code there are many changes required in 
+1.Form input
+2.error after input
+3.required field in input
+
+------------------------------------------------------------    
+FrontEnd Completed
+------------------------------------------------------------
+Mongo DB- No SQL Database
+Express - NodeJs Framework for creating sserver side applications and APIs
+React - Building UI
+Node -  RunTime environment for JS
+
+1.Load Node in terminal 
+-> npm init 
+-> Load express
+->Go to hello world and coopy the code
+->In package.json add "start":"node index.js"
+->If you want to check http://localhost:3000
+->install Nodemon
+->Install .env
+->const dotenv= require("dotenv")
+->dotenv.config();
+
+->To use import instead of require we use
+->below "main" ..... "type":"module"
+->import express from "express";
+->import dotenv from "dotenv";
+
+2.Adding DB
+->Always use try and catch for DB connectivity 
+->install mongoose [ Mongoose is a bridge that connects a backend program with a mongoDB service. ]
+
+3.Create model folder and define model for books data defined in cars 
+->Define book schema check it online 
+->Define Controllers for functionality of Schema 
+->Import book model into Controller
+->FlowChart  ->Model.js ->Controller ->    Route   -> Index.js    
+              [Schema]   [Function]  ["/bookstore"]   [Route]
+
+4.Adding JSON Book data to mongoDB
+->Go to the new DB created and use "Add Data" Option and directly import the json data list created in FrontEnd
+->Give a MongoUrl and ask chat gpt for code to directly push book data and mostly keep the json data out of frontend as it will cause an error 
+->Or we can directly add data through "add data" option in Compass
+->Test API once data is imported 
+->Go to postman for API testing 
+->http://localhost:4001/book "GET" req on postman where route is the one defined in index.js 
+->Integrate with FrontEnd we use the JS library called axios install it in Frontend [Used for making HTTP Req]
+
+5.Back To Frontend
+->Now we don't need the data to be imported from list.json for cards we can fetch it from DB
+->Install axios in it 
+->Call Backend API 
+->We use useState and useEffect to fetch API adn write the code n card where you want to fetch it 
+->We will encounter an CORS error as Frontend:5173 and Backend:4001 as both are running on different PORTS as it doesn't allow backend data to be accessed on Frontend
+->To prevent CORS error we install "cors" which is a middleware that enables us to enable cors [Install it in Backend]
+->It is a Middleware adn now we are fetching the Data from DB to Frontend
+->Make similar changes to FreeBook homePage along with filter function to filter out only the free books data  amke changes in map too
+
+6.Why Fetching Data from DB for cards 
+->In case of Frontend as it was created earlier we need json file to show data in cards that's why Backend is always created before Frontend   
+
+

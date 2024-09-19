@@ -1,0 +1,80 @@
+
+[{
+  "id":1,
+  "name":"Marvel Comics",
+  "title":"Iron Fist",
+  "price":"$20",
+  "category":"Free",
+  "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732490.jpg?semt=ais_hybrid"
+}, {
+  "id":2,
+  "name":"Comic Book",
+  "title":"FlashPoint",
+  "price":"$20",
+  "category":"Free",
+  "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732489.jpg?semt=ais_hybrid"
+},{
+  "id":3,
+  "name":"Marvel Comics",
+  "title":"Man-Hawk",
+  "price":"$20",
+  "category":"Free",
+  "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732544.jpg?semt=ais_hybrid"
+},
+  {
+    "id":6,
+    "name":"Story Book",
+    "title":"HEHHEHEHEHEHE",
+    "price":10,
+    "category":"Free",
+    "image":"https://img.freepik.com/free-vector/halloween-card-with-bats-flying_24877-54009.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+  },
+  {
+    "id":7,
+    "name":"Comic Book",
+    "title":"HEHHEHEHEHEHE2",
+    "price":20,
+    "category":"Free",
+    "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732508.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+  },
+  {
+    "id":8,
+    "name":"Comic Book",
+    "title":"HEHHEHEHEHEHE2",
+    "price":20,
+    "category":"Free",
+    "image":"https://img.freepik.com/free-vector/halloween-pumpkin-with-bats-flying-pop-art-style_24877-56423.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+  },
+  {
+    "id":4,
+    "name":"Comic Book",
+    "title":"HEHHEHEHEHEHE2",
+    "price":20,
+    "category":"Food",
+    "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732521.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+  },
+  {
+    "id":5,
+    "name":"Comic Book",
+    "title":"HEHHEHEHEHEHE2",
+    "price":20,
+    "category":"Science",
+    "image":"https://img.freepik.com/free-vector/hand-drawn-comic-strip-template_23-2151265847.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+  },
+  {
+    "id":9,
+    "name":"Comic Book",
+    "title":"HEHHEHEHEHEHE2",
+    "price":20,
+    "category":"COmedy",
+    "image":"https://img.freepik.com/free-vector/halloween-pumpkin-with-bats-flying-pop-art-style_24877-56423.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+  },
+  {
+    "id":10,
+    "name":"Comic Book",
+    "title":"HEHHEHEHEHEHE2",
+    "price":20,
+    "category":"COmedy",
+    "image":"https://img.freepik.com/free-vector/halloween-pumpkin-with-bats-flying-pop-art-style_24877-56423.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+  }
+]
