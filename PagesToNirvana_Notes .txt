@@ -183,4 +183,7 @@ Node -  RunTime environment for JS
 8.Postman to hit the endPoint 
 ->The data we are adding in json format is not parsing through so we use a middleware
 ->app.use(express.json()) Whatever data we are sending from body will be parsed into json 
-->
+->As the Backend part is completed before integrating it with Backend check it on "Postman"
+->Password is Visible in Our DB to prevent that we use BeCrypt Library 
+->Install BeCrypt Library import it into controller and before sending the password to DB we will Hash it 
+->Hit API again to check it password is hashed 

@@ -1,5 +1,6 @@
 import User from "../Models/user.model.js";
 //DB named User will be formed like books
+import bcryptjs from 'bcrypt'
 
 export const signup= async (req,res)=>{
     try {
@@ -10,10 +11,14 @@ export const signup= async (req,res)=>{
         if(user){
             return res.status(400).json({message:"User already exists"})
         }
+        //Hashing password just before sending it into DB 
+        const hashPassword =await bcryptjs.hash(password,10)  
+       
         const createdUser= new User({
-            fullname,
-            email,
-            password
+            fullname:fullname,
+            email:email,
+            password:hashPassword, //Hashed Password is now passed
+            // password:password,
         })
  //Created Data is saved in the DB
         await createdUser.save()
