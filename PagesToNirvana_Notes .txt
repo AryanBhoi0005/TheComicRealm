@@ -172,4 +172,15 @@ Node -  RunTime environment for JS
 6.Why Fetching Data from DB for cards 
 ->In case of Frontend as it was created earlier we need json file to show data in cards that's why Backend is always created before Frontend   
 
+7.Login 
+->User Schema creation 
+->Create a new Route for MongoDB Schema in postman [POST REQ] -> [Raw Json data]
+->Write its functionality in controller 
+->Create a Route and call it in index.js as it is the Starting point 
+->Check MongoCompass a DB added named users
+->Always check Compass
 
+8.Postman to hit the endPoint 
+->The data we are adding in json format is not parsing through so we use a middleware
+->app.use(express.json()) Whatever data we are sending from body will be parsed into json 
+->
