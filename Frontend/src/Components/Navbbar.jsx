@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../../public/Logo7.jpg'
 import Login from './Login';
+import Logout from './Logout'
+import { useAuth } from '../Context/AuthProvider';
 
 function Navbbar() {
+  const [authUser,setAuthUser]=useAuth()
   // Check if local storage in inspect application has a theme if yes return it or else turn it to light 
   const [theme, setTheme] = useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light");
   const [image,setImage] = useState( );
@@ -136,10 +139,18 @@ function Navbbar() {
 </label>
 
   {/* Button */}
-    <a className="bg-black text-white font-bold px-4 py-2 rounded-md hover:bg-gray-700 duration-100 cursor-pointer dark:hover:bg-yellow-500 dark:hover:text-black dark:hover:duration-300 "
-    onClick={()=>document.getElementById("my_modal_3").showModal()}
-    >Login</a>
-    <Login/>
+                                  {/* On basis of ContextAPI check if user is already logged in or not */}
+    {
+      authUser?<Logout/>:
+      <div>
+      <a className="bg-black text-white font-bold px-4 py-2 rounded-md hover:bg-gray-800 hover:text-yellow-500 duration-300 cursor-pointer dark:hover:bg-yellow-600 dark:hover:text-black dark:hover:duration-300 "
+      onClick={()=>document.getElementById("my_modal_3").showModal()}
+      >Login</a>
+      <Login/>
+      </div>
+    }
+
+
 </div>
 </div>
     </div>

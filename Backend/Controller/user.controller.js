@@ -22,7 +22,11 @@ export const signup= async (req,res)=>{
         })
  //Created Data is saved in the DB
         await createdUser.save()
-        res.status(201).json({message:"User created Successfully"})
+        res.status(201).json({message:"User created Successfully",user:{
+            _id:createdUser._id,
+            fullname:createdUser.fullname,
+            email:createdUser.email,
+        }})
     } catch (error) {
         console.log("Error:" + error.message)
         res.status(500).json({message:"Internal Server Error"})
@@ -34,7 +38,7 @@ export const login =async(req,res) =>{
         const {email,password} =req.body;
         const user=await User.findOne({email});   //This basically is DB itself 
         //We will compare between logged in password and user.password which is DB stored password
-        const isMatch=bcryptjs.compare(password,user.password)
+        const isMatch=await bcryptjs.compare(password,user.password)
         if(!user || !isMatch){
             return res.status(400).json({message:"Invalid username or password"})
         }else{

@@ -189,4 +189,19 @@ Node -  RunTime environment for JS
 ->Hit API again to check it password is hashed 
 
 9.Login
--> Create a contoller for functionality of user login 
+-> Create a contoller for functionality of user login and route it 
+
+10.Integrate with Frontend
+->Signup interagtion and will we input data into form we also fetch data from it and store it in DB using post operation 
+->After signup we will store the data into browser local data for authentication while showing paid courses 
+->The data in local storage is stored in the form of obj so to parse it in JSON format we use JSON.stringyfy
+->Once we have stored the data into the local Storage we can use it anywhere in the form of "context API"
+->Do the same for login 
+->When the user logs in successfully we should use a better pop up than alert so we use "React hot toast" library into Frontend, Place it in place of Alert
+-> Creation of Context API to receive user from LocalStorage and use it in another component [Courses are only visible to logged in users else no]
+->Once contextAPI is created we have to wrap it in main.jsx and we have to protect the "Courses" Route
+
+11.Add Logout functionality
+->Use this in NavBar to log out only when user is logged in 
+->Add functionality to Logout
+->Add click feature to logout
