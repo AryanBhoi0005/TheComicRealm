@@ -26,7 +26,7 @@ try {
   console.log("Error",error);
 }
 
-//Defining Routes 
+//Defining Routes to hit the DB
 app.use("/book",bookRoute);
 app.use("/users",UserRoute);
 

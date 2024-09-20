@@ -172,7 +172,7 @@ Node -  RunTime environment for JS
 6.Why Fetching Data from DB for cards 
 ->In case of Frontend as it was created earlier we need json file to show data in cards that's why Backend is always created before Frontend   
 
-7.Login 
+7.Signup
 ->User Schema creation 
 ->Create a new Route for MongoDB Schema in postman [POST REQ] -> [Raw Json data]
 ->Write its functionality in controller 
@@ -187,3 +187,6 @@ Node -  RunTime environment for JS
 ->Password is Visible in Our DB to prevent that we use BeCrypt Library 
 ->Install BeCrypt Library import it into controller and before sending the password to DB we will Hash it 
 ->Hit API again to check it password is hashed 
+
+9.Login
+-> Create a contoller for functionality of user login 
