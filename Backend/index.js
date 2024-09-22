@@ -4,10 +4,11 @@ import mongoose from "mongoose";
 import bookRoute from './Routes/book.route.js'
 import cors from 'cors'
 import UserRoute from './Routes/user.route.js'
+import FeedbackRoute from './Routes/feedback.route.js'
 
 const app = express()
 dotenv.config();
-const PORT=process.env.PORT || 4000;
+const PORT=process.env.PORT ;
 
 //Prevent CORS Error
 app.use(cors());
@@ -29,4 +30,5 @@ try {
 //Defining Routes to hit the DB
 app.use("/book",bookRoute);
 app.use("/users",UserRoute);
+app.use("/feedback",FeedbackRoute)
 

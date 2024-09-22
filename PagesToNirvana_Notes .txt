@@ -205,3 +205,11 @@ Node -  RunTime environment for JS
 ->Use this in NavBar to log out only when user is logged in 
 ->Add functionality to Logout
 ->Add click feature to logout
+
+--------------------------------------------------------
+Final Touch
+--------------------------------------------------------
+1.Route Contact and About
+->Create a Component -> Create a Folder as a page and Components-> Create a Route -> Add it to Navbar
+
+2.Add Feedback functionality

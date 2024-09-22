@@ -22,18 +22,19 @@ function Courses() {
   },[])
   return (
     <>
-    <div className='min-h-screen '>
+    <div className='min-h-screen dark:bg-black'>
       <div className='max-w-screen-2xl mx-auto md:px-20 px-4'>
          
-        <div className='mt-28 justify-center items-center text-center'>
-        <h1 className='text-2xl font-semibold md:text-4xl  text-black '>
+        <div className='pt-28 justify-center items-center text-center'>
+        <h1 className='text-2xl font-semibold md:text-4xl  text-black dark:text-gray-500'>
         We're delighted to have you {" "}
-        <span className='text-gray-500'> at OurStore :) </span></h1>
-        <p className='mt-12 '>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam soluta, eligendi numquam aliquid perferendis sunt repellat fugiat tempora rem magni! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus facere delectus, voluptatem debitis suscipit dolor unde eius beatae velit ab facilis qui, eveniet dolore, tempore quaerat rem similique sint ex! Omnis ab non alias repellat recusandae fugiat nobis aspernatur. Laboriosam quibusdam a qui ea, facere aspernatur commodi placeat obcaecati? Earum?
+        <span className='text-gray-500 dark:text-yellow-600'> at OurStore :) </span></h1>
+        <p className='mt-10 text-2xl dark:text-gray-500'>
+        "Even the mightiest warriors experience fears. What makes them a true warrior is the courage that they possess to overcome their fears."
         </p>
+        <span className='flex justify-center text-lg dark:text-gray-300'>- Prince Vegeta</span>
         <Link to='/'>
-        <button className='bg-black text-white px-4 py-2 rounded-xl mt-6 duration-700 hover:bg-[#FFD700] hover:text-black hover:font-bold'>Back</button>
+        <button className='bg-black dark:bg-gray-500 dark:text-black text-white px-4 py-2 rounded-xl mt-6 duration-700 hover:bg-[#FFD700] hover:text-black hover:font-bold'>Back</button>
         </Link>
         </div>
         

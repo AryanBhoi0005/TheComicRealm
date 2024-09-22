@@ -26,8 +26,8 @@ function Navbbar() {
         <>
       <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href="/">Home</a></li>
       <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href="/Course">Course</a></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a>Contact</a></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a>About</a></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href='/Contact'>Contact</a></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href='/About'>About</a></li>
         </>
     )
 
