@@ -25,6 +25,9 @@ const bookSchema = new mongoose.Schema({
     image:{
         type:String,
         required:true
+    },
+    link:{
+        type:String
     }
 })
 const Book = new mongoose.model("Book", bookSchema)

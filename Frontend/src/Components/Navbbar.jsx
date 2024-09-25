@@ -5,6 +5,18 @@ import Logout from './Logout'
 import { useAuth } from '../Context/AuthProvider';
 
 function Navbbar() {
+  // const fetchData=(value) => {
+  //   fetch("").then((Response=>Response.json()).then(json => {
+  //     const results=json.filter((user)=>{
+  //       return (value && user && user.name && user.name.toLowerCase().includes(value)
+  //     )})
+  //     console.log(results)
+  //   }))
+  // }
+  // const handlChange=(value)=>{
+  //   setInput(value)
+  //   fetchData(value)
+  // }
   const [authUser,setAuthUser]=useAuth()
   // Check if local storage in inspect application has a theme if yes return it or else turn it to light 
   const [theme, setTheme] = useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light");
@@ -75,7 +87,7 @@ function Navbbar() {
       {navComponents}
       </ul>
     </div>
-    <img src={logo} className="h-10 w-10 rounded-xl  " />
+    <img src={logo} className="h-10 w-10 rounded-xl hidden sm:block " />
     <a className="md:text-2xl lg:text-3xl font-bold mx-3 dark:hover:text-yellow-500 dark:hover:duration-300 ">TheComicRealm</a>
   </div>
   
@@ -87,12 +99,13 @@ function Navbbar() {
   </div>
   
   {/* Search Bar */}
-  <div className='hidden md:block dark:hover:text-yellow-500 dark:hover duration-300'>
+  {/* <div className='hidden lg:block dark:hover:text-yellow-500 dark:hover duration-300'>
   <label className="flex items-center gap-2 px-2 py-1 border-2 border-black rounded-xl dark:hover:border-yellow-500">
     <input 
       type="text"
       className="grow outline-none bg-transparent text-black placeholder-black duration-300 dark:hover:text-yellow-500 dark:hover:placeholder-yellow-400"
       placeholder="Search"
+      // onChange={(e) =handlChange(e.target.value)} 
     />
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +120,7 @@ function Navbbar() {
       />
     </svg>
   </label>
-</div>
+</div> */}
 
 
 

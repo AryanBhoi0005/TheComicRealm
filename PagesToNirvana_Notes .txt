@@ -213,3 +213,8 @@ Final Touch
 ->Create a Component -> Create a Folder as a page and Components-> Create a Route -> Add it to Navbar
 
 2.Add Feedback functionality
+->Backend Connected -> Feedback button added with hook ->API added
+
+3.Adding About Page 
+->Include react-fonts
+->Route it in Reactjs 

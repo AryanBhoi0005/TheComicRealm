@@ -5,10 +5,11 @@ import bookRoute from './Routes/book.route.js'
 import cors from 'cors'
 import UserRoute from './Routes/user.route.js'
 import FeedbackRoute from './Routes/feedback.route.js'
+import ContactUsRoute from './Routes/contact.route.js'
 
 const app = express()
 dotenv.config();
-const PORT=process.env.PORT ;
+const PORT=process.env.PORT || 4000;
 
 //Prevent CORS Error
 app.use(cors());
@@ -31,4 +32,5 @@ try {
 app.use("/book",bookRoute);
 app.use("/users",UserRoute);
 app.use("/feedback",FeedbackRoute)
+app.use("/contactUs",ContactUsRoute);
 
