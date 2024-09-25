@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const [scrolly,onScroll]=useState();
@@ -9,10 +10,10 @@ function Footer() {
       <footer className="footer footer-center bg-gray-400
       text-base-content p-10 rounded-xl">
   <nav className="grid grid-flow-col gap-4">
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+  <Link to="/About" className="link link-hover">About us</Link>
+  <Link to="/Contact" className="link link-hover">Contact</Link>
+    {/* <a className="link link-hover">Jobs</a>
+    <a className="link link-hover">Press kit</a> */}
   </nav>
   <nav>
     <div className="grid grid-flow-col gap-4">

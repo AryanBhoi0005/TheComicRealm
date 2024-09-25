@@ -1,81 +1,64 @@
 
 [{
   "id":1,
-  "name":"Marvel Comics",
-  "title":"Iron Fist",
-  "price":"$20",
+  "name":"The Killing Joke",
+  "title":"Alan Moore",
+  "price":"$3.50",
   "category":"Free",
-  "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732490.jpg?semt=ais_hybrid",
-  "link":"https://drive.google.com/file/d/1xQ9rJYyn198cnW_7SlycesNhGuapFbrq/view?usp=drive_link"
+  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWLyfAQSUXxXYTV3wMQk5IbuQ8Iyb6l6ZCQPYENMKppradS-o-sdMoNSvTeuB6MkEMHgQ&usqp=CAU",
+  "link":"https://drive.google.com/file/d/1mFODAh6Ht2finqwHmck2zC_QHuCIOZ8N/view?usp=sharing"
 }, {
   "id":2,
-  "name":"Comic Book",
-  "title":"FlashPoint",
-  "price":"$20",
+  "name":"Arkham Asylum",
+  "title":"Dave McKean",
+  "price":"$24.95",
   "category":"Free",
-  "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732489.jpg?semt=ais_hybrid"
-},{
-  "id":3,
-  "name":"Marvel Comics",
-  "title":"Man-Hawk",
-  "price":"$20",
-  "category":"Free",
-  "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732544.jpg?semt=ais_hybrid"
+  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjIcppNj5P6i5gYLwdZUnr3Q88wfcBANGSQ&s",
+  "link":"https://drive.google.com/file/d/1iaRCt8PkCDGSb2looVKV-YA3-pV5pXlo/view?usp=sharing"
+  },{
+    "id":3,
+    "name":"Flashpoint",
+    "title":"Geoff Johns",
+    "price":"$3.99",
+    "category":"Paid",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFWVn8XJngbiGOzpT3ZaDHVPylzcotGP9KIG0lZc99B6GvwQqi5joUTwG7C9hgj6ojEQ&usqp=CAU",
+    "link":"https://drive.google.com/file/d/1IS7bLOc6kLwY6fGvRtjD2kKIhKUkfvMI/view?usp=sharing"
 },
   {
-    "id":6,
-    "name":"Story Book",
-    "title":"HEHHEHEHEHEHE",
-    "price":10,
-    "category":"Free",
-    "image":"https://img.freepik.com/free-vector/halloween-card-with-bats-flying_24877-54009.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
-  },
-  {
-    "id":7,
-    "name":"Comic Book",
-    "title":"HEHHEHEHEHEHE2",
-    "price":20,
-    "category":"Free",
-    "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732508.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
-  },
-  {
-    "id":8,
-    "name":"Comic Book",
-    "title":"HEHHEHEHEHEHE2",
-    "price":20,
-    "category":"Free",
-    "image":"https://img.freepik.com/free-vector/halloween-pumpkin-with-bats-flying-pop-art-style_24877-56423.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
-  },
-  {
     "id":4,
-    "name":"Comic Book",
-    "title":"HEHHEHEHEHEHE2",
-    "price":20,
-    "category":"Food",
-    "image":"https://img.freepik.com/free-photo/cartoon-superhero-illustration_23-2151732521.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+    "name":"Superman: Doomsday Wars",
+    "title":"Dan Jurgens ",
+    "price":"$4.75",
+    "category":"Free",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoE0LNX9axYif9CjL-E_X9HyXuqunw3gvhA&s",
+    "link":"https://drive.google.com/file/d/1m_6wG7Xv7hurAPpTByo5G6AaFJowgwbV/view?usp=sharing"
   },
   {
     "id":5,
-    "name":"Comic Book",
-    "title":"HEHHEHEHEHEHE2",
-    "price":20,
-    "category":"Science",
-    "image":"https://img.freepik.com/free-vector/hand-drawn-comic-strip-template_23-2151265847.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+    "name":"Batman & Spiderman ",
+    "title":"Stan Lee",
+    "price":"$4.25",
+    "category":"Paid",
+    "image":"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1243383448i/784926.jpg",
+    "link":"https://drive.google.com/file/d/1m_6wG7Xv7hurAPpTByo5G6AaFJowgwbV/view?usp=sharing"
   },
   {
-    "id":9,
-    "name":"Comic Book",
-    "title":"HEHHEHEHEHEHE2",
-    "price":20,
-    "category":"COmedy",
-    "image":"https://img.freepik.com/free-vector/halloween-pumpkin-with-bats-flying-pop-art-style_24877-56423.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+    "id":6,
+    "name":"Old Man Logan",
+    "title":"Mark Miller",
+    "price":"$8.90",
+    "category":"Paid",
+    "image":"https://ia801405.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/WolverineOldManLogan/Wolverine%20-%20Old%20Man%20Logan_jp2.zip&file=Wolverine%20-%20Old%20Man%20Logan_jp2/Wolverine%20-%20Old%20Man%20Logan_0000.jp2&id=WolverineOldManLogan&scale=4&rotate=0",
+     "link":"https://drive.google.com/file/d/1QdXcvO3AqOx0o7nBOiMvAiQvcSzC0_oj/view?usp=sharing"
   },
   {
-    "id":10,
-    "name":"Comic Book",
-    "title":"HEHHEHEHEHEHE2",
-    "price":20,
-    "category":"COmedy",
-    "image":"https://img.freepik.com/free-vector/halloween-pumpkin-with-bats-flying-pop-art-style_24877-56423.jpg?uid=R162711058&ga=GA1.1.1503677812.1725880419&semt=ais_hybrid"
+    "id":7,
+    "name":"851 LR Amazing Spider Man",
+    "title":"Stan Lee",
+    "price":"10.50",
+    "category":"Paid",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ox6rlQMm7sUMyoDd5mgMvZQ1V-3Ud0Rd5Q&s",
+    "link":"https://drive.google.com/file/d/1NFyVmaXazcBumSV8ZO5aW71vXc_tgXxb/view?usp=sharing"
   }
 ]
+ 

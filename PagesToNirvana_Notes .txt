@@ -218,3 +218,5 @@ Final Touch
 3.Adding About Page 
 ->Include react-fonts
 ->Route it in Reactjs 
+------------------------------------------------------
+->To run insert json to Mongo we use -> go to that folder -> node folder name in this case go to schema and then " node insertData.js"

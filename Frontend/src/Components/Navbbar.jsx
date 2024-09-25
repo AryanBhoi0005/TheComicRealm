@@ -3,6 +3,7 @@ import logo from '../../public/Logo7.jpg'
 import Login from './Login';
 import Logout from './Logout'
 import { useAuth } from '../Context/AuthProvider';
+import { Link } from 'react-router-dom';
 
 function Navbbar() {
   // const fetchData=(value) => {
@@ -36,10 +37,10 @@ function Navbbar() {
    
     const navComponents=(
         <>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href="/">Home</a></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href="/Course">Course</a></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href='/Contact'>Contact</a></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold'><a href='/About'>About</a></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><a href="/">Home</a></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><a href="/Course">Books</a></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><a href='/Contact'>Contact</a></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><a href='/About'>About</a></li>
         </>
     )
 
@@ -88,7 +89,11 @@ function Navbbar() {
       </ul>
     </div>
     <img src={logo} className="h-10 w-10 rounded-xl hidden sm:block " />
-    <a className="md:text-2xl lg:text-3xl font-bold mx-3 dark:hover:text-yellow-500 dark:hover:duration-300 ">TheComicRealm</a>
+
+    <Link 
+  to="/" // Navigate to home route
+  className="md:text-2xl lg:text-3xl font-bold mx-3 dark:hover:text-yellow-500 dark:hover:duration-300 hover:text-yellow-500"
+>TheComicRealm</Link>
   </div>
   
   <div className="navbar-end space-x-4 space-y-2">
@@ -125,12 +130,12 @@ function Navbbar() {
 
 
   {/* Theme Controller */}
-  <label className="swap swap-rotate dark:hover:text-yellow-500 dark:hover:duration-300">
+  <label className="swap swap-rotate hover:text-yellow-500 dark:hover:text-yellow-500 dark:hover:duration-300">
   {/* this hidden checkbox controls the state */}
-  <input type="checkbox" className="theme-controller hidden lg:block" value="synthwave" />
+  <input type="checkbox" className="theme-controller" value="synthwave" />
   {/* sun icon */}
   <svg
-    className="swap-off h-9 w-9  fill-current hidden lg:block order-2"
+    className="swap-off h-9 w-9  fill-current order-2"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     onClick={()=>setTheme(theme==="light"?"dark":"light")}
@@ -140,7 +145,7 @@ function Navbbar() {
   </svg>
   {/* moon icon */}
   <svg
-    className="swap-on h-9 w-9  fill-current hidden lg:block order-1 "
+    className="swap-on h-9 w-9  fill-current order-1 "
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     onClick={()=>
