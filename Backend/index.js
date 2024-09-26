@@ -9,7 +9,7 @@ import ContactUsRoute from './Routes/contact.route.js'
 
 const app = express()
 dotenv.config();
-const PORT=process.env.PORT || 4000;
+const PORT=process.env.PORT || 4001;
 
 //Prevent CORS Error
 app.use(cors());
@@ -20,7 +20,7 @@ app.listen(PORT, () => {
 })
 
 //To connect MongoDB
-const MongoDB=process.env.MongoURL ||'mongodb+srv://aryanbhoi1962:bhoi12345@cluster0.0vabk.mongodb.net/myDatabaseName' ;
+const MongoDB=process.env.MongoURL ;
 try {
    mongoose.connect(MongoDB,{});
    console.log("Mongo DB connected");
