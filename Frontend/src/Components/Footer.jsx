@@ -16,7 +16,7 @@ function Footer() {
     <a className="link link-hover">Press kit</a> */}
   </nav>
   <nav>
-    <div className="grid grid-flow-col gap-4 text-white">
+    <div className="grid grid-flow-col gap-4 text-white bg-black rounded-xl">
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
