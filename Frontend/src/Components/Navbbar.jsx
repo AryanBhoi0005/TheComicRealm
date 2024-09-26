@@ -37,10 +37,10 @@ function Navbbar() {
    
     const navComponents=(
         <>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link>"/"</Link></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link>"/Course"</Link></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link>"/Contact"</Link></li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link>"/About"</Link></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link to='/'>"/"</Link></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link to='/Course'>Books</Link></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link to='/Contact'>Contact</Link></li>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'><Link to='/About'>About</Link></li>
         </>
     )
 
