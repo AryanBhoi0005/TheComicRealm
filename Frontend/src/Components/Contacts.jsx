@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import backgroundImage from '../../public/Bg3.jpg'; // adjust the path accordingly
+import axios from 'axios';
 
 function Contacts() {
   const [formData, setFormData] = useState({
@@ -24,13 +25,14 @@ function Contacts() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/contactUs/ContactController`, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/contactUs/ContactController`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       });
+      
 
       if (response.ok) {
         setStatusMessage('Hero Called successfully!');

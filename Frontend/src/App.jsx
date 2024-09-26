@@ -19,7 +19,7 @@ function App() {
       <Route path='/' element={<Home/>}> </Route>
       <Route path='/Course' element={authUser?<Course/>:<Navigate to='/SignUp'/>}> </Route>
       <Route path='/SignUp' element={<SignUp/>}></Route>
-      <Route path='/Contact' element={<Contact/>}></Route>
+      <Route path='/Contact' element={authUser?<Contact/>:<Navigate to='/SignUp'/>}></Route>
       <Route path='/About' element={<About/>}></Route>
     </Routes>
     <Toaster />
