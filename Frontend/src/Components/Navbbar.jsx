@@ -132,11 +132,7 @@ function Navbbar() {
   {/* Theme Controller */}
   <label className="swap swap-rotate hover:text-yellow-500 dark:hover:text-yellow-500 dark:hover:duration-300">
   {/* this hidden checkbox controls the state */}
-  <input 
-  type="checkbox" 
-  checked={theme === "dark"} 
-  onChange={() => setTheme(theme === "light" ? "dark" : "light")}
-/>
+  <input type="checkbox" className="theme-controller" value="synthwave" />
   {/* sun icon */}
   <svg
     className="swap-off h-9 w-9  fill-current order-2"
