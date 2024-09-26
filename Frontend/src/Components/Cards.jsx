@@ -9,7 +9,7 @@ function Cards({ item }) {
       window.open(item.link, '_blank');
       setError(''); // Clear any previous errors.
     } else {
-      setError('Cpmic is not available.');
+      setError('Comic is not available.');
     }
   };
 

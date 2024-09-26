@@ -23,7 +23,7 @@ function SignUp() {
       password: data.password,
     };
 
-    await axios.post("http://localhost:4001/users/signup", userInfo)
+    await axios.post(`${import.meta.env.VITE_BACKEND_URL}/users/signup`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
