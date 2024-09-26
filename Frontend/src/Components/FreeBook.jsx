@@ -39,7 +39,7 @@ function FreeBook() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    initialSlide: 0,
+    initialSlide: 1,
     responsive: [
       {
         // If more than 1024px then 3 cards else 2 and less
