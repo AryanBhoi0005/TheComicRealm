@@ -10,8 +10,8 @@ function Footer() {
       <footer className="footer footer-center bg-gray-400
       text-base-content p-10 rounded-xl">
   <nav className="grid grid-flow-col gap-4">
-  <Link to="/About" className="link link-hover text-black">About us</Link>
-  <Link to="/Contact" className="link link-hover text-black">Contact</Link>
+  <Link to="/About" className="link link-hover text-black font-bold">About us</Link>
+  <Link to="/Contact" className="link link-hover text-black font-bold">Contact</Link>
     {/* <a className="link link-hover">Jobs</a>
     <a className="link link-hover">Press kit</a> */}
   </nav>
@@ -53,7 +53,7 @@ function Footer() {
     </div>
   </nav>
   <aside>
-    <p className='text-black'>Copyright © {new Date().getFullYear()} - Aryan Bhoi</p>
+    <p className='text-black font-semibold'>Copyright © {new Date().getFullYear()} - Aryan Bhoi</p>
   </aside>
 </footer>
     </div>

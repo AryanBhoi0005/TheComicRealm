@@ -7,7 +7,7 @@ function AboutPage() {
     <>
     <div className='max-w-screen-2xl mx-auto md:px-20 px-4'>
       <div
-        className="h-screen lg:p-20 sm:p-4 p-20 overflow-hidden"
+        className="h-screen lg:p-20 sm:p-4 p-20 overflow-auto"
         style={{ backgroundImage: `url('Bg7.jpg')` }}
       >
         <div className="sm:max-w-xl lg:max-w-4xl max-w-4xl rounded-xl shadow-2xl sm:p-4 lg:p-8 p-8 bg-white">
