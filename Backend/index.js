@@ -20,7 +20,7 @@ app.listen(PORT, () => {
 })
 
 //To connect MongoDB
-const MongoDB=process.env.MongoURL;
+const MongoDB=process.env.MongoURL || 'mongodb+srv://aryanbhoi1962:bhoi12345@cluster0.0vabk.mongodb.net/myDatabaseName' ;
 try {
    mongoose.connect(MongoDB,{});
    console.log("Mongo DB connected");
