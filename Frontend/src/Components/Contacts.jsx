@@ -22,19 +22,39 @@ function Contacts() {
   };
 
   // Handle form submission
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/contactUs/ContactController`, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
+      
+
+  //     if (response.ok) {
+  //       setStatusMessage('Hero Called successfully!');
+  //       setFormData({ name: '', email: '', contact: '', query: '' }); // Reset form
+  //     } else {
+  //       setStatusMessage('Failed to send message. Please try again.');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error submitting form:', error);
+  //     setStatusMessage('Error sending message.');
+  //   }
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/contactUs/ContactController`, {
-        method: 'POST',
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/contactUs/ContactController`, formData, {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
       });
-      
-
-      if (response.ok) {
+  
+      if (response.status === 200) {  // Change this line to handle Axios responses correctly
         setStatusMessage('Hero Called successfully!');
         setFormData({ name: '', email: '', contact: '', query: '' }); // Reset form
       } else {
@@ -42,9 +62,10 @@ function Contacts() {
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      setStatusMessage('Error sending message.');
+      setStatusMessage('Error sending message.');s
     }
   };
+  
 
   return (
     <>
