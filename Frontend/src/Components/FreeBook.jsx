@@ -17,7 +17,7 @@ function FreeBook() {
     const getBook= async()=>{
       try {
         //As our API created is GET REQ
-        const res = await axios.get("http://localhost:4001/book")
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/book`)
         console.log(res.data)
         //We will filter the data and use the same func we used for list 
         const data=res.data.filter((data)=>data.category==="Free")

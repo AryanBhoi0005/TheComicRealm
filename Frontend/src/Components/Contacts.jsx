@@ -24,7 +24,7 @@ function Contacts() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4001/contactUs/ContactController', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/contactUs/ContactController`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ function Courses() {
     const getBook= async()=>{
       try {
         //As our API created is GET REQ
-        const res = await axios.get("http://localhost:4001/book")
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/book`)
         console.log(res.data)
         setBook(res.data)
       } catch (error) {

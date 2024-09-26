@@ -12,7 +12,7 @@ function Banner() {
     const userFeedback = { query: data.query };
 
     setIsSubmitting(true);
-    await axios.post('http://localhost:4001/feedback/Feed', userFeedback)
+    await axios.post(`${import.meta.env.VITE_BACKEND_URL}/feedback/Feed`, userFeedback)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
