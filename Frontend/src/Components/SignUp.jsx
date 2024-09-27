@@ -92,9 +92,9 @@ function SignUp() {
               {errors.password && <span className='text-sm text-red-500'>This field is required</span>}
             </div>
             {/* Sign Up Button */}
-            <div className='flex justify-around mt-4'>
-              <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-600 duration-200'>Sign Up</button>
-              <p className='mt-4 text-lg'>Already Have an Account? {" "}
+            <div className='flex justify-around mt-4 space-x-2'>
+              <button className='bg-pink-500 text-white rounded-md px-4 mt-2 hover:bg-pink-600 duration-200'>SignUp</button>
+              <p className='mt-1 text-lg'>Already Have an Account? {" "}
                 <Link to="/">
                   <button className='underline text-blue-500 cursor-pointer' onClick={() => document.getElementById("my_modal_3").showModal()}>Login</button>
                 </Link>
