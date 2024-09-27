@@ -74,7 +74,7 @@ function FreeBook() {
     <>
     {/* We require the same spacing for every component so copy tailwind class from Navbar */}
     
-    <div className='max-w-screen-2xl mx-auto md:px-20 px-4 pb-8 space-y-2 dark:bg-black '>
+    <div className='bg-white max-w-screen-2xl mx-auto md:px-20 px-4 pb-8 space-y-2 dark:bg-black '>
       {/* ParaGragh  */}
       <div>
         {/* pb-2 is padding from bottom 2 */}
