@@ -54,16 +54,16 @@ function Navbbar() {
 
   const navComponents = (
     <>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl text-black'>
         <Link to='/'>Home</Link>
       </li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl text-black'>
         <Link to='/Course'>Books</Link>
       </li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl text-black'>
         <Link to='/Contact'>Contact</Link>
       </li>
-      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl'>
+      <li className='dark:hover:bg-yellow-500 dark:hover:rounded-xl dark:font-bold hover:bg-yellow-500 hover:rounded-xl text-black'>
         <Link to='/About'>About</Link>
       </li>
     </>
@@ -139,10 +139,10 @@ function Navbbar() {
 
 
   {/* Theme Controller */}
-  <label className="swap swap-rotate hover:text-yellow-500 dark:hover:text-yellow-500 dark:hover:duration-300 text-black">
+  <label className="swap swap-rotate  dark:hover:duration-300 text-black">
               <input type="checkbox" className="theme-controller" />
               <svg
-                className="swap-off h-9 w-9 fill-current order-2"
+                className="swap-off h-9 w-9 fill-current order-2 "
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 onClick={toggleMode}
