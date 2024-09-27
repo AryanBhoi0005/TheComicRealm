@@ -53,7 +53,7 @@ function Banner() {
             </p>
 
             {/* Input Feedback */}
-            <label className="input text-gray-500 input-bordered border-gray-800 flex items-center gap-2 dark:bg-gray-600 dark:text-black bg-gray-30">
+            <label className="input  input-bordered border-gray-800 flex items-center gap-2 dark:bg-gray-600 dark:text-black bg-gray-30">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ function Banner() {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="grow text-gray-700 dark:text-yellow-500 font-bold dark:hover:placeholder-yellow-500 placeholder:text-black"
+                className="grow text-gray-700 dark:text-yellow-500 font-bold dark:hover:placeholder-yellow-500 placeholder:text-gray-500"
                 placeholder=" Help! Somebody, please! In the face of danger, I need a hero!"
               />
             </label>

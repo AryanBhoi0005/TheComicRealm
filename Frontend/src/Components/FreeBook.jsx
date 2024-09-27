@@ -77,8 +77,8 @@ function FreeBook() {
       {/* ParaGragh  */}
       <div>
         {/* pb-2 is padding from bottom 2 */}
-    <h1 className='font-bold text-2xl dark:text-gray-500 dark:pt-4'>Free Comics</h1>  
-    <p className=' dark:text-gray-400 text-lg'>"Unleash the Hero Within: A New Chapter Begins!"</p>
+    <h1 className='font-bold text-black text-2xl dark:text-gray-500 dark:pt-4'>Free Comics</h1>  
+    <p className='text-black dark:text-gray-400 text-lg'>"Unleash the Hero Within: A New Chapter Begins!"</p>
       </div>
     
      {/* Slider  */}
