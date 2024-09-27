@@ -71,7 +71,7 @@ function Navbbar() {
 
   return (
       <>
-    <div className={` max-w-screen-2xl mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 dark:bg-gray-500 dark:text-black  ${
+    <div className={` max-w-screen-2xl mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 dark:bg-gray-500 dark:text-gray-500  ${
       sticky?"sticky-navbar shadow-md bg-yellow-500 dark:bg-gray-700 duration-700 mt-2 rounded-2xl transition-all ease-in-out": " " }
       `}>
       <div className="navbar ">
@@ -101,7 +101,7 @@ function Navbbar() {
 
     <Link 
   to="/" // Navigate to home route
-  className="md:text-2xl lg:text-3xl font-bold mx-3 dark:hover:text-yellow-500 dark:hover:duration-300 hover:text-yellow-500"
+  className="text-black md:text-2xl lg:text-3xl font-bold mx-3 dark:hover:text-yellow-500 dark:hover:duration-300 hover:text-yellow-500"
 >TheComicRealm</Link>
   </div>
   
@@ -139,7 +139,7 @@ function Navbbar() {
 
 
   {/* Theme Controller */}
-  <label className="swap swap-rotate hover:text-yellow-500 dark:hover:text-yellow-500 dark:hover:duration-300">
+  <label className="swap swap-rotate hover:text-yellow-500 dark:hover:text-yellow-500 dark:hover:duration-300 text-black">
               <input type="checkbox" className="theme-controller" />
               <svg
                 className="swap-off h-9 w-9 fill-current order-2"
@@ -153,7 +153,7 @@ function Navbbar() {
               </svg>
 
               <svg
-                className="swap-on h-9 w-9 fill-current order-1"
+                className="swap-on h-9 w-9 fill-current order-1 text-black"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 onClick={toggleMode}

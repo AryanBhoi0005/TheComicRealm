@@ -53,7 +53,7 @@ function Banner() {
             </p>
 
             {/* Input Feedback */}
-            <label className="input input-bordered border-gray-800 flex items-center gap-2 dark:bg-gray-600 dark:text-black bg-gray-30">
+            <label className="input text-gray-500 input-bordered border-gray-800 flex items-center gap-2 dark:bg-gray-600 dark:text-black bg-gray-30">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -74,7 +74,7 @@ function Banner() {
 
           {/* Button */}
           <button
-            className="btn btn-active font-bold btn-neutral mt-6 dark:bg-gray-600 dark:hover:bg-yellow-500 dark:hover:text-black hover:bg-gray-600"
+            className="text-black btn btn-active font-bold btn-neutral mt-6 dark:bg-gray-600 dark:hover:bg-yellow-500 dark:hover:text-black hover:bg-gray-600"
             onClick={() => submitFeedback({ query })}
             disabled={isSubmitting} // Disable the button during submission
           >
