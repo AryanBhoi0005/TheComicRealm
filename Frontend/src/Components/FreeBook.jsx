@@ -63,7 +63,8 @@ function FreeBook() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          initialSlide: 0
         }
       }
     ]
@@ -73,11 +74,11 @@ function FreeBook() {
     <>
     {/* We require the same spacing for every component so copy tailwind class from Navbar */}
     
-    <div className='bg-white max-w-screen-2xl mx-auto md:px-20 px-4 pb-8 space-y-2 dark:bg-black '>
+    <div className='max-w-screen-2xl mx-auto md:px-20 px-4 pb-8 space-y-2 dark:bg-black '>
       {/* ParaGragh  */}
       <div>
         {/* pb-2 is padding from bottom 2 */}
-    <h1 className='font-bold text-black text-2xl dark:text-gray-500 dark:pt-4'>Free Comics</h1>  
+    <h1 className=' text-black font-bold text-2xl dark:text-gray-500 dark:pt-4'>Free Comics</h1>  
     <p className='text-black dark:text-gray-400 text-lg'>"Unleash the Hero Within: A New Chapter Begins!"</p>
       </div>
     
