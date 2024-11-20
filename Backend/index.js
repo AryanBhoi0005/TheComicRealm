@@ -29,15 +29,6 @@ try {
   process.exit(1); 
 }
 
-// Test route
-app.get('/test', (req, res) => {
-    
-  res.json({
-    message: "Bhai gf dila do !!"
-  });
-   
-});
-
 //Defining Routes to hit the DB
 app.use("/book",bookRoute);
 app.use("/users",UserRoute);
